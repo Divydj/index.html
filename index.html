@@ -1,131 +1,130 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>  
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arham Luxe – Guest Feedback</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            /* Palace-style background */
-            background: url('https://media.cntraveler.com/photos/5c06e5a801ffc86b13da2529/16%3A9/w_2560%2Cc_limit/The-Oberoi-Udaivilas%2C-Udaipur__2018_Chandni----the-al-fresco-dining---The-Oberoi-Udaivilas%2C-Udaipur.jpg') no-repeat center center fixed;
-            background-size: cover;
-            margin: 0;
-            padding: 0;
-            color: #fff;
-        }
-        .header {
-            text-align: center;
-            padding: 30px 0 10px;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 3em;
-            color: #f8c8d8;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-        }
-        .form-container {
-            max-width: 600px;
-            margin: 20px auto 50px;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        }
-        h2 {
-            text-align: center;
-            color: #f8c8d8;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        label {
-            font-size: 1.2em;
-            margin-bottom: 5px;
-            display: block;
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="number"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 2px solid #f8c8d8;
-            border-radius: 5px;
-            background: #fff;
-            color: #333;
-        }
-        input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            background: #f8c8d8;
-            border: none;
-            border-radius: 5px;
-            color: #333;
-            font-size: 1.2em;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background: #f1a7c4;
-        }
-        .error {
-            color: #ffcccc;
-            font-size: 0.9em;
-            margin-bottom: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arham Luxe – Guest Feedback</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: url('https://media.cntraveler.com/photos/5c06e5a801ffc86b13da2529/16%3A9/w_2560%2Cc_limit/The-Oberoi-Udaivilas%2C-Udaipur__2018_Chandni----the-al-fresco-dining---The-Oberoi-Udaivilas%2C-Udaipur.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+    .header {
+      text-align: center;
+      padding: 30px 0 10px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 3em;
+      color: #e0c185; /* gold */
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+    .form-container {
+      max-width: 600px;
+      margin: 20px auto 50px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    h2 {
+      text-align: center;
+      color: #e0c185;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    label {
+      font-size: 1.2em;
+      margin-bottom: 5px;
+      display: block;
+      color: #fff8dc; /* light ivory */
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 2px solid #e0c185;
+      border-radius: 5px;
+      background: #fff;
+      color: #333;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background: #e0c185;
+      border: none;
+      border-radius: 5px;
+      color: #333;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      background: #d6b25c;
+    }
+    .error {
+      color: #ffd2d2;
+      font-size: 0.9em;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Hotel Name Header -->
-    <div class="header">
-        <h1>Arham Luxe</h1>
-    </div>
+  <div class="header">
+    <h1>Arham Luxe</h1>
+  </div>
 
-    <div class="form-container">
-        <h2>We Value Your Feedback</h2>
-        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DgK000003c3OC" method="POST" onsubmit="return validateForm()">
-            <input type="hidden" name="orgid" value="00DgK000003c3OC">
-            <input type="hidden" name="retURL" value="http://">
+  <div class="form-container">
+    <h2>We Value Your Feedback</h2>
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DgK000003c3OC" method="POST" onsubmit="return validateForm()">
+      <input type="hidden" name="orgid" value="00DgK000003c3OC" />
+      <input type="hidden" name="retURL" value="http://" />
 
-            <!-- Booking ID as first field -->
-            <label for="bookingId">Booking ID</label>
-            <input type="text" id="bookingId" name="00NgK000012NWWz" required>
+      <label for="bookingId">Booking ID</label>
+      <input type="text" id="bookingId" name="00NgK000012NWWz" required />
 
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
 
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" required>
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required />
 
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required>
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" required />
 
-            <label for="description">Your Feedback</label>
-            <textarea id="description" name="description" rows="4" required></textarea>
+      <label for="description">Your Feedback</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
 
-            <label for="rating">Rating (1-10)</label>
-            <input type="number" id="rating" name="rating" min="1" max="10" required>
-            <div id="ratingError" class="error"></div>
+      <label for="rating">Rating (1-10)</label>
+      <input type="number" id="rating" name="rating" min="1" max="10" required />
+      <div id="ratingError" class="error"></div>
 
-            <input type="submit" value="Submit Feedback">
-        </form>
-    </div>
+      <input type="submit" value="Submit Feedback" />
+    </form>
+  </div>
 
-    <script>
-        function validateForm() {
-            var rating = document.getElementById('rating').value;
-            var ratingError = document.getElementById('ratingError');
+  <script>
+    function validateForm() {
+      var rating = document.getElementById('rating').value;
+      var ratingError = document.getElementById('ratingError');
 
-            if (rating < 1 || rating > 10) {
-                ratingError.textContent = "Please enter a rating between 1 and 10.";
-                return false;
-            } else {
-                ratingError.textContent = "";
-                return true;
-            }
-        }
-    </script>
+      if (rating < 1 || rating > 10) {
+        ratingError.textContent = "Please enter a rating between 1 and 10.";
+        return false;
+      } else {
+        ratingError.textContent = "";
+        return true;
+      }
+    }
+  </script>
 
 </body>
 </html>
